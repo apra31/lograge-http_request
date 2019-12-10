@@ -21,7 +21,7 @@ module HttpLog
         end
 
       Lograge::HttpRequest.store[:lograge_http_requests] ||= []
-      Lograge::HttpRequest.store[:lograge_http_requests] << options
+      Lograge::HttpRequest.store[:lograge_http_requests] << lograge_http_requests
     end
   end
 end
